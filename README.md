@@ -1,4 +1,4 @@
-# PopupKit
+# PopupKit 1.2.0
 
 PopupKit is an NPM package that you can call from one line of JavaScript code to display a nice-looking popup modal.
 
@@ -53,6 +53,8 @@ popupkit.simpleLight("This is the title", "This is the message.", () => {
 | ------------- |-------------|
 | simpleLight() | A simple light-themed popup |
 | simpleDark()  | A simple dark-themed popup  |
+
+More to come! 😉
 
 ## License
 
