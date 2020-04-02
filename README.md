@@ -1,22 +1,58 @@
 # PopupKit
 
-A UI kit called from a javascript object that provides you with a selection of popup modals to use in your project.
+PopupKit is an NPM package that you can call from one line of JavaScript code to display a nice-looking popup modal.
 
-## Installation
+## Install
 
-You can install by pasting the CDN into the `<head>` in your html file.
+### NPM
+
+```
+npm i popupkit
+```
+
+### Yarn
+
+```
+yarn add popupkit
+```
+
+After installation, paste this into your html file's `<head>` tag:
 
 ```html
-<script src='https://unpkg.com/popupkit@1.1.0/index.min.js'></script>
+<script src="./node_modules/popupkit/index.min.js"></script>
+```
+
+#### or
+
+### CDN
+
+Or if you'd rather use a CDN, paste this inside the `<head>` tag instead:
+
+```html
+<script src='https://unpkg.com/popupkit@1.2.0/index.min.js'></script>
 ```
 
 ## Usage
 
-To output a popup modal on your screen, type the code below into your JavaScript file:
+All you need is one line of JavaScript code. Yep! You heard me right. <b>One</b> line is all you need.
 
 ```js
-popupkit.simple('This is the title', "This is the message.");
+popupkit.simpleLight("This is the title", "This is the message.", () => {
+    console.log("Popup is closed")
+});
 ```
+
+1. Call the <b>popupkit</b> object
+2. Call in the theme function
+3. Type title in the first parameter
+4. Type title in the second parameter
+5. (OPTIONAL) Write a callback function for when he user closes the popup
+
+## Themes
+| Theme function| Description |
+| ------------- |-------------|
+| simpleLight() | A simple light-themed popup |
+| simpleDark()  | A simple dark-themed popup  |
 
 ## License
 
