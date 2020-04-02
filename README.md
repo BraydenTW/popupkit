@@ -7,7 +7,7 @@ A UI kit called from a javascript object that provides you with a selection of p
 You can install by pasting the CDN into the `<head>` in your html file.
 
 ```html
-<script src='https://unpkg.com/popupkit@1.0.0/index.min.js'></script>
+<script src='https://unpkg.com/popupkit@1.1.0/index.min.js'></script>
 ```
 
 ## Usage
