@@ -1,7 +1,7 @@
 {
   "name": "popupkit",
   "description": "A UI kit called from a javascript object that provides you with a selection of popup modals to use in your project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,13 @@
     "type": "git",
     "url": "https://github.com/braydentw/popupkit.git"
   },
-  "keywords": ["popupkit", "popup", "modal", "popup modal", "braydentw"],
+  "keywords": [
+    "popupkit",
+    "popup",
+    "modal",
+    "popup modal",
+    "braydentw"
+  ],
   "author": "Brayden Wright",
   "license": "MIT",
   "bugs": {
