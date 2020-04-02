@@ -1,11 +1,10 @@
-# PopupKit 1.2.1
+# PopupKit 1.2.2
 
 PopupKit is an NPM package that you can call from one line of JavaScript code to display a nice-looking popup modal.
 
-## What's new?
+## What's new in 1.2.2?
 
-<li>Dark theme for the simple popup</li>
-<li>Fixed main.min.css import error</li>
+<li>PopupKit now has a website <a href="https://popupkit.netlify.com">here</a></li>
 
 ## Install
 
@@ -34,7 +33,7 @@ After installation, paste this into your html file's `<head>` tag:
 Or if you'd rather use a CDN, paste this inside the `<head>` tag instead:
 
 ```html
-<script src='https://unpkg.com/popupkit@1.2.1/index.min.js'></script>
+<script src='https://unpkg.com/popupkit@1.2.2/index.min.js'></script>
 ```
 
 ## Usage
