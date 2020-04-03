@@ -1,21 +1,10 @@
-# PopupKit 1.3.0
+# PopupKit 1.3.1
 
 PopupKit is an NPM package that you can call from one line of JavaScript code to display a nice-looking popup modal.
 
-## What's new in 1.3.0?
+## What's new in 1.3.1?
 
 <ul>
-<li>New theme functions:
-<ul>
-<li>blackAndWhite()</li>
-<li>blueAndWhite()</li>
-<li>redAndWhite()</li>
-<li>yellowAndWhite()</li>
-<li>greenAndWhite()</li>
-</ul>
-</li>
-<li>Scrollbar added to popup</li>
-<li>New max-min height/width for popup to limit size</li>
 <li>Fixed issue of callback happening earlier than popup has faded</li>
 </ul>
 
@@ -46,7 +35,7 @@ After installation, paste this into your html file's `<head>` tag:
 Or if you'd rather use a CDN, paste this inside the `<head>` tag instead:
 
 ```html
-<script src='https://unpkg.com/popupkit@1.3.0/index.min.js'></script>
+<script src='https://unpkg.com/popupkit@1.3.1/index.min.js'></script>
 ```
 
 ## Usage
