@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap");
 .popupkit-container {
   position: fixed;
   top: 0;
@@ -12,11 +12,13 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   font-family: "Muli";
   padding: 10px 70px 10px 15px;
+  border-radius: 15px;
+  overflow: hidden;
   opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.35s;
   transition: opacity 0.35s;
 }
@@ -24,47 +26,97 @@
 .popupkit-simple-light {
   background: white;
   border: solid 2px #aaa;
-  border-radius: 15px;
 }
 
 .popupkit-simple-dark {
   background: -webkit-gradient(linear, left top, left bottom, from(#33334e), to(#1c1c2e));
   background: linear-gradient(to bottom, #33334e, #1c1c2e);
-  border: solid 2px #33334e;
-  border-radius: 15px;
   color: white;
+  border: solid 2px #33334e;
 }
 
 .popupkit-simple-dark .popupkit-message {
   color: #ccc;
 }
 
-.popupkit-simple-dark .popupkit-button {
-  color: #bbb;
+.popupkit-blackandwhite {
+  border: solid 2px black;
 }
 
-.popupkit-simple-dark .popupkit-button:hover {
+.popupkit-blackandwhite .popupkit-title {
+  background: black;
+}
+
+.popupkit-blueandwhite {
+  border: solid 2px #3498db;
+}
+
+.popupkit-blueandwhite .popupkit-title {
+  background: #3498db;
+}
+
+.popupkit-greenandwhite {
+  border: solid 2px #2ecc71;
+}
+
+.popupkit-greenandwhite .popupkit-title {
+  background: #2ecc71;
+}
+
+.popupkit-redandwhite {
+  border: solid 2px #e74c3c;
+}
+
+.popupkit-redandwhite .popupkit-title {
+  background: #e74c3c;
+}
+
+.popupkit-yellowandwhite {
+  border: solid 2px #f1c40f;
+}
+
+.popupkit-yellowandwhite .popupkit-title {
+  background: #f1c40f;
+}
+
+.popupkit-blackandwhite, .popupkit-blueandwhite, .popupkit-redandwhite, .popupkit-yellowandwhite, .popupkit-greenandwhite {
+  background: white;
+}
+
+.popupkit-blackandwhite .popupkit-title, .popupkit-blueandwhite .popupkit-title, .popupkit-redandwhite .popupkit-title, .popupkit-yellowandwhite .popupkit-title, .popupkit-greenandwhite .popupkit-title {
   color: white;
+}
+
+.popupkit-blackandwhite .popupkit-message, .popupkit-blueandwhite .popupkit-message, .popupkit-redandwhite .popupkit-message, .popupkit-yellowandwhite .popupkit-message, .popupkit-greenandwhite .popupkit-message {
+  color: #666;
+}
+
+.popupkit-blackandwhite .popupkit-button:hover, .popupkit-blueandwhite .popupkit-button:hover, .popupkit-redandwhite .popupkit-button:hover, .popupkit-yellowandwhite .popupkit-button:hover, .popupkit-greenandwhite .popupkit-button:hover {
+  color: white;
+}
+
+.popupkit-blueandwhite .popupkit-button, .popupkit-redandwhite .popupkit-button, .popupkit-yellowandwhite .popupkit-button, .popupkit-greenandwhite .popupkit-button {
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .popupkit-button {
   position: absolute;
   background: none;
-  top: 10px;
+  top: 5px;
   right: 10px;
-  width: 40px;
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
   font-size: 40px;
   font-family: sans-serif;
   color: #888;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  outline: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  cursor: pointer;
 }
 
 .popupkit-button:hover {
@@ -72,17 +124,42 @@
 }
 
 .popupkit-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   font-size: 1.8em;
   font-weight: 700;
-  padding: 3px 0px;
+  padding: 10px 20px;
 }
 
 .popupkit-message {
+  position: relative;
+  top: 46px;
+  left: 0;
+  right: 0;
   font-size: 1.1em;
   font-weight: 300;
   color: #666;
-  padding: 10px 0px;
-  min-width: 200px;
-  max-width: 300px;
+  max-height: 150px;
+  min-height: 30px;
+  min-width: 175px;
+  margin: 10px -55px 45px 0px;
+  padding: 0px 10px 0px 0px;
+  overflow-y: scroll;
+}
+
+.popupkit-message::-webkit-scrollbar {
+  width: 8px;
+  background: none;
+}
+
+.popupkit-message::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.popupkit-message::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
 /*# sourceMappingURL=all.css.map */
