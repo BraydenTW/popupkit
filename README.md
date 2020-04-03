@@ -16,6 +16,7 @@ PopupKit is an NPM package that you can call from one line of JavaScript code to
 </li>
 <li>Scrollbar added to popup</li>
 <li>New max-min height/width for popup to limit size</li>
+<li>Fixed issue of callback happening earlier than popup has faded</li>
 </ul>
 
 ## Install
