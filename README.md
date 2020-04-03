@@ -1,10 +1,22 @@
-# PopupKit 1.2.2
+# PopupKit 1.3.0
 
 PopupKit is an NPM package that you can call from one line of JavaScript code to display a nice-looking popup modal.
 
-## What's new in 1.2.2?
+## What's new in 1.3.0?
 
-<li>PopupKit now has a website <a href="https://popupkit.netlify.com">here</a></li>
+<ul>
+<li>New theme functions:
+<ul>
+<li>blackAndWhite()</li>
+<li>blueAndWhite()</li>
+<li>redAndWhite()</li>
+<li>yellowAndWhite()</li>
+<li>greenAndWhite()</li>
+</ul>
+</li>
+<li>Scrollbar added to popup</li>
+<li>New max-min height/width for popup to limit size</li>
+</ul>
 
 ## Install
 
@@ -33,7 +45,7 @@ After installation, paste this into your html file's `<head>` tag:
 Or if you'd rather use a CDN, paste this inside the `<head>` tag instead:
 
 ```html
-<script src='https://unpkg.com/popupkit@1.2.2/index.min.js'></script>
+<script src='https://unpkg.com/popupkit@1.3.0/index.min.js'></script>
 ```
 
 ## Usage
@@ -57,6 +69,11 @@ popupkit.simpleLight("This is the title", "This is the message.", () => {
 | ------------- |-------------|
 | simpleLight() | A simple light-themed popup |
 | simpleDark()  | A simple dark-themed popup  |
+| blackAndWhite() | A black and white popup |
+| blueAndWhite()  | A blue and white popup  |
+| redAndWhite() | A red and white popup |
+| yellowAndWhite()  | A yellow and white popup  |
+| greenAndWhite() | A green and white popup |
 
 More to come! 😉
 
